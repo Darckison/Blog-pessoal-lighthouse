@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- ERRO LIGHTHOUSE: lang="en" para conteúdo em português (SEO/Acessibilidade) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!-- ERRO LIGHTHOUSE: Título genérico sem valor de SEO -->
+    <link rel="stylesheet" href="blogerros.css">
+    <!-- ERRO LIGHTHOUSE: Falta meta description -->
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav class="menu-fixo">
+            <ul>
+                <!-- ERRO LIGHTHOUSE: <a> direto dentro de <ul> sem <li> (Estrutura inválida) -->
+                <a href="#inicio">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ERRO SEMÂNTICO: Dois elementos <header> soltos no fluxo principal -->
+    <header id="inicio">
+        <div class="brand">
+            <!-- ERRO: Imagem sem dimensões responsivas adequadas ou alt descritivo -->
+            <img src="Foto_perfil.jpeg" alt="Foto" width="50" height="50">
+            <h1>Meu Blog Pessoal</h1>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section id="boas-vindas">
+                <h2>Bem-vindo ao meu blog pessoal!</h2>
+                <p>Bem-vindo. Criei este blog para funcionar como um caderno de anotações aberto. Aqui compartilho meus interesses, o dia a dia na tecnologia e os projetos em que estou trabalhando no momento. Se você curte trocar ideias sobre aprendizado prático, código, design e rotina, sinta-se em casa.</p>
+                <p></p> <!-- Tag vazia inútil -->
+            </section>
+
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Sou estudante de tecnologia apaixonado por resolver problemas através de código, lógica de programação e interfaces funcionais.</p>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato!</p>
+                <a href="mailto:contato@exemplo.com">Mandar Mensagem</a>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu Blog Pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

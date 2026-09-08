@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #999999; /* ERRO LIGHTHOUSE: Contraste de cor muito baixo para leitura */
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-fixo ul {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-fixo a {
+    text-decoration: none;
+    color: #aaaaaa; /* ERRO: Péssimo contraste (reprova na métrica de Acessibilidade) */
+}
+
+#inicio {
+    padding-top: 80px;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}

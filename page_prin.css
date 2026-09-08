@@ -1,0 +1,75 @@
+:root {
+    --bg-cor: #050505;          /* Azul ardósia escuro */
+    --bg-card: #1e293b;         /* Fundo de cartões */
+    --texto-principal: #290a7f; /* Quase branco (ótimo contraste) */
+    --texto-secundario: #cbd5e1;/* Cinza claro legível */
+    --destaque: #38bdf8;        /* Azul claro vívido */
+    --destaque-hover: #0ea5e9;
+    --borda: rgba(255, 255, 255, 0.1);
+    --fonte: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+header {
+    background-color: var(--bg-cor);
+    color: var(--texto-principal);
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--fonte);
+    color: var(--texto-secundario);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+body{
+    background-color: #000000;
+    color: var(--texto-secundario);
+    font-family: var(--fonte);
+}
+
+section {
+    padding: 2rem;
+    max-width: 850px;
+    margin: 2rem auto;
+    background-color: #063451;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(186, 36, 36, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;   
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao{
+    background-color: var(--destaque);
+    color: var(--texto-principal);
+    border: none;
+    padding: 1rem 2rem;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+.botao:hover{
+    background-color:#cbd5e1;
+}
+
+@media (max-width: 600px) {
+    .botoes {
+        flex-direction: column;
+    }
+}
